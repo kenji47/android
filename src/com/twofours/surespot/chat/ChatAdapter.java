@@ -49,7 +49,7 @@ public class ChatAdapter extends BaseAdapter {
 	public ChatAdapter(Context context) {
 		SurespotLog.v(TAG, "Constructor.");
 		mContext = context;
-
+		String s;
 		SharedPreferences pm = context.getSharedPreferences(IdentityController.getLoggedInUser(), Context.MODE_PRIVATE);
 		mDebugMode = pm.getBoolean("pref_debug_mode", false);
 		
